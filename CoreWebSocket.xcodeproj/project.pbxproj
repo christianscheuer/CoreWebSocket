@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9194067A171F23B0009B64F8 /* WebSocketFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = EB93B6E316C195840004C53A /* WebSocketFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A63272A720BB334A00CB6CA1 /* libapple_crypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A63272A620BB334A00CB6CA1 /* libapple_crypto.tbd */; };
 		EB131D7D1327F5C900C8F095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB131D7B1327F5C900C8F095 /* InfoPlist.strings */; };
 		EB131D8D1327F63700C8F095 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60778B1324E7FB00D98B17 /* CoreFoundation.framework */; };
 		EB131D8E1327F63900C8F095 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6077961325111400D98B17 /* CoreServices.framework */; };
-		EB131D8F1327F63B00C8F095 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB607798132514E800D98B17 /* libcrypto.dylib */; };
 		EB60778C1324E7FB00D98B17 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60778B1324E7FB00D98B17 /* CoreFoundation.framework */; };
 		EB6077971325111500D98B17 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6077961325111400D98B17 /* CoreServices.framework */; };
 		EB607799132514E800D98B17 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB607798132514E800D98B17 /* libcrypto.dylib */; };
@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A63272A620BB334A00CB6CA1 /* libapple_crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libapple_crypto.tbd; path = usr/lib/libapple_crypto.tbd; sourceTree = SDKROOT; };
 		EB131D711327F5C900C8F095 /* CoreWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB131D7A1327F5C900C8F095 /* CoreWebSocket-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreWebSocket-Info.plist"; sourceTree = "<group>"; };
 		EB131D7C1327F5C900C8F095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -84,9 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63272A720BB334A00CB6CA1 /* libapple_crypto.tbd in Frameworks */,
 				EB131D8D1327F63700C8F095 /* CoreFoundation.framework in Frameworks */,
 				EB131D8E1327F63900C8F095 /* CoreServices.framework in Frameworks */,
-				EB131D8F1327F63B00C8F095 /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +183,7 @@
 		EB60778A1324E7FB00D98B17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A63272A620BB334A00CB6CA1 /* libapple_crypto.tbd */,
 				EB131D831327F5F300C8F095 /* iOS */,
 				EB4CE584132683A70090FED3 /* OSX */,
 			);
@@ -483,7 +485,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CoreWebSocket_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreWebSocket_iOS/CoreWebSocket_iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoreWebSocket/CoreWebSocket-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
@@ -498,7 +500,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/CoreWebSocket_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreWebSocket_iOS/CoreWebSocket_iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoreWebSocket/CoreWebSocket-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
